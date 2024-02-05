@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Tech-S</title>
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<style>
+    body{
+        background: url(Images/Background-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    *{
+        box-sizing: border-box;
+    }
+ /*.............................................Back arrow .....................................*/
+ .back-arrow a{
+    color: aqua;
+    text-decoration: underline 1px white;
+}
+.back-arrow a:hover{
+    text-decoration: aqua underline 1.6px;
+    color: white;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+.back-arrow i{
+    padding-right: 10px;
+    color: aqua;
+    font-size: 25px;
+}
+
+/*.......................................Container-content.....................................*/
+    .container{
+        background: grey;
+        width: 75%;
+        height: 60vh;
+        margin:36px auto;
+        border-radius: 10px;
+        border: aqua;
+        box-shadow: 1.5px 1.5px 5px aqua;
+        display: flexbox;
+    }
+ 
+.title{
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    padding-left: 15px;
+}
+.signup-link{
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signup-link span{
+    text-decoration: underline aqua 1px;
+}
+.signup-link span:hover{
+    text-decoration: none;
+}
+.signup-link:hover{
+    text-decoration: underline aqua 1.6px;
+    color: white;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+input.username{
+    width: 200px;
+    height: 30px;
+    border: aqua;
+     box-shadow: 0.4px 0.4px 4px aqua;
+    border-radius: 10px;
+     margin: auto;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    outline: none;
+}
+ input.password{
+    width: 200px;
+    height: 30px;
+    border: aqua;
+   box-shadow: 0.4px 0.4px 4px aqua;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-weight: bold;
+    outline: none;
+}
+
+#checkbox{
+    height: 16px;
+    border: black;
+    width: 18px;
+    background: aqua;
+    
+}
+span.show-pwd{
+    display: flex;
+    margin: auto; 
+    justify-content: center;
+    
+}
+label.clear-submit{
+    display: flex;
+margin:  auto;
+justify-content: center;  
+}
+input.clear-button{
+   width: 100px;
+   height: 40px;
+  border: none;
+  box-shadow: 0px 0px 4px aqua;
+border-radius: 8px;
+background: none;
+font-size: 16px;
+font-weight: bold;
+cursor: progress;
+ margin-right: 10px; 
+}
+input.clear-button:hover{
+    color: white;
+    opacity: 0.4;
+    transition: 0.5;
+}
+
+input.submit-button{
+ width: 150px;
+ height: 40px;
+border-radius: 10px;
+background: none;
+font-size: 16px;
+font-weight: bold;
+border: none;
+  box-shadow: 0px 0px 4px aqua;
+  cursor: progress;
+}
+input.submit-button:hover{
+    color: white;
+    opacity: 0.4;
+    transition: 0.5;
+}
+/*--------------------------------------------------------Footer-section.....................*/
+
+.copyright{
+    background:grey;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    position: fixed;
+    align-items:center;
+   text-align: center;
+}
+.copyright p{
+    font-weight: bold;
+    margin-left: 100px;
+    color: aqua;
+}
+.copyright .rights{
+    margin-left: 200px;
+}
+
+/*......................................Social icons.........................*/
+.copyright span {
+    font-size: 20px;
+}
+.copyright span i{
+   justify-content: space-evenly; 
+}
+.copyright .fa-brands{
+    color: white;
+}
+.copyright span i.fa-whatsapp:hover{
+    color: green;
+}
+.copyright span i.fa-facebook:hover{
+    color: blue;
+}
+.copyright span i.fa-instagram:hover{
+    color: brown;
+}
+.copyright span i.fa-twitter:hover{
+    color: darkblue;
+}
+.copyright span i.fa-linkedin:hover{
+    color: blue;
+}
+.copyright span i.fa-discord:hover{
+    color: darkblue;
+}
+.copyright span i.fa-facebook-messenger:hover{
+    color:purple;
+}
+form span{
+    font-weight: bold;
+}
+
+.back-arrow{
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+/*..........................................Small screens ....................................*/
+@media only screen and (max-width: 600px){
+    body{
+       width: 100%;
+       background-repeat: repeat-y;
+    }
+.container{
+    display: flexbox;
+    height: 600px;
+}
+}
+</style>
+<body>
+<h2 class="back-arrow"> <a href="Login.html"><i class="fa-solid fa-left-long"> </a></i>Back to <a href="Login.html">Login Page </a></h2>
+    <div class="container">
+    <h1 class="title">Reset Password</h1>
+    <h2> Fear not!, we will email you with steps to Reset your accound password or username.</h2>
+
+    <h2>
+     If you nolonger have access to your Email,or forgot your User-name, please try: <a class="signup-link" href="signup.html">Create <span>New Account</span></a>
+    </h2>
+
+    <form>
+        <label for="password"></label>
+        <input type="name" id="name" class="username" placeholder="Username ">
+
+    <br><br>
+        <input type="password" name="password" id="password" placeholder="Enter New Password" class="password" >
+        <span class="show-pwd"><input type="checkbox" id="checkbox" value=""> Show Pasword</span>
+        <br><br>
+    <br>
+  <label class="clear-submit">
+    <input type="reset" value="clear" class="clear-button">
+    <input type="submit" value="submit" class="submit-button">
+</label>
+</form>
+
+
+<!----------------------------------------------------Footer-section---------------------------------------->
+<footer id="footer">
+    <div class="copyright">
+        <p>
+        Copyright <b>©Griffin Tech-S, Inc-2023.</b>
+        <span>
+   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="#"><i class="fa-brands fa-discord"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+    </span>
+    <i> @griffintechsolutions.com</i>
+         <b class="rights">All Rights Reserved!</b></p>
+     </div>
+</footer>
+
+<script>
+    const password = document.getElementById('password');
+    const checkbox = document.getElementById('checkbox');
+
+    checkbox.onchange = function(e){
+        password.type = checkbox.checked? "text":"password";
+    }
+
+</script>
+</body>
+</html>

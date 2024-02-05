@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        
+      
+        html{
+            scroll-behavior: smooth;
+        }
+      /*.........................................................Home page CSS................................................................
+      ......................................................................................................................................*/
+        video{
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            right: 0;
+            bottom: 0;
+            filter: blur(8px);
+        }
+        /*..........................................Navbar...................................*/
+        .navbar{
+            padding: 10px 5%;
+        }
+    nav{
+        display:inline-flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+    }
+    nav b i{
+        font-size: 40px;
+        color: white;
+        margin-left: -45px;
+        margin-right: 20px;
+        rotate: 90deg;
+    }
+    nav b{
+        font-size: 50px;
+        font-weight: 800;
+        color:orange;
+        padding-right: 0px;
+        cursor: pointer;
+    }
+    
+    
+    .navbar ul li{
+    font-weight: bold;
+    display: inline-block;
+    margin-left:15px;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px 0px 2px aqua;
+    padding: 10px 8px;
+    height: 50px;
+    background: transparent;
+    border-radius: 8px;
+    }
+    .navbar ul :hover{
+        opacity: 0.7;
+        color: orange;
+        transition: 0.5s;
+    }
+    .navbar ul button{
+        width: 140px;
+        height: 50px;
+        color: aqua;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+        border-radius: 6px;
+        border: none;
+       cursor: pointer;
+        background:none;
+    }
+
+    .navbar ul button.joinus-btn{
+        box-shadow: -1px 1px 2px orange;
+    }
+    .navbar ul button.register-btn{
+        box-shadow: 1px -1px 2px orange;  
+    }
+    .navbar ul button:active{
+        border: solid grey 2px;
+        transition: 0.2s;
+        opacity: 0.2;
+    }
+    .navbar ul button.joinus-btn:hover{
+        box-shadow: 1px -1px 3px orange;
+        transition: 0.5s;
+    }
+    .navbar ul button.register-btn:hover{
+        box-shadow: -1px 1px 3px orange;
+        transition: 0.5s;  
+    }
+     /*..........................................HeaderText...................................*/
+     .headertext{
+        margin: 0px 50px;
+     }
+     .headertext h1{
+        margin-left: 350px;
+    
+     }
+    .headertext ul li{
+        padding-top: 10px;
+        font-size: 16px;
+        list-style: none;
+    }
+    
+    /*.......................................................Login section............................*/
+    .wrapper{
+   background: rgb(2, 2, 10);
+    width: 360px;
+    height: auto;
+    color: white;
+    top: 130px;
+    box-shadow: 0px 0px 6px aqua ;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    margin:auto 40%;
+    }
+    .wrapper .login-form{
+        display:block;
+      margin-left: 12%;
+      margin-bottom: 5%;
+      
+    }
+    .login-form h1{
+        text-align: center;
+        margin: 5px 0 20px;
+    }
+  .login-form h1::after{
+    content: '';
+    width: 45px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 14%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 2px;
+    opacity: 0.8;
+    display: flex;
+  }
+    .inputbox input{
+    width: 84%;
+    height: 30px;
+    font-size: 16px;
+    border: solid 1px;
+    background: transparent;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    
+    }
+    ::placeholder{
+    color: rgb(255, 255, 255);
+    padding: 5%;
+    }
+    
+    #checkbox{
+        width: 18px;
+        height: 16px;
+        margin-top: 12px;
+        margin-left: 20%;
+        cursor: pointer;
+    }
+  
+    .inputbox span{
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .buttons{
+        display: flex;
+    }
+    .buttons .create-account{
+        height: 32px;
+        text-decoration: none;
+        background: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        border: none;
+        box-shadow: -1px 1px 2px orange;  
+        border-radius: 4px;
+        padding: 6px;
+        margin: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .buttons .create-account:hover{
+        background: linear-gradient( to left, orangered,orange);
+        box-shadow: none;
+        transition: 0.2s;
+        opacity: 0.4; 
+    }
+    .buttons .login{
+    border-radius: 2px;
+    width: 100px;
+    height: 32px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 18px;
+    margin: 5px;
+    font-weight: bold;
+    background: linear-gradient( to left, orangered,orange);
+    border: none;
+    color: white;
+    }
+    .buttons .login:hover{
+        background: linear-gradient( to right, orangered,orange);
+        transition: 0.5s;
+        opacity: 0.5;
+    }
+    a.Link{
+    color:aqua;
+    text-decoration: none;
+    font-size: 16px;
+     margin-left: 10%;
+    }
+
+    a.Link:hover{
+    color:white;
+    text-decoration: underline aqua solid;
+    }
+    h3{
+        opacity: 0.5;
+        text-align: center;
+        margin-left: -12%;
+    }
+    a.facebook{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    background:none;
+    width: 88%;
+    height: 30px;
+    margin-bottom: 8px;
+    color: white;
+    box-shadow: -1px 1px 2px orange;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+  
+    a.facebook:hover{
+        box-shadow: 1px 1px 2px orange;
+    transition: 0.2s;
+    opacity: 0.4;
+    }
+    .facebook .fa-brands{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .twitter{
+    border: none;
+    border-radius: 5px;
+   box-shadow: 1px 1px 2px orange;
+    width: 88%;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    background: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: mymove 5s infinite;
+    }
+   
+    .twitter .fa-brands{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .twitter:hover{
+        box-shadow: -1px 1px 2px orange;
+        transition: 0.2s;
+        opacity: 0.4;
+    }
+
+       /*.....................................Signup form..........................................*/
+    .wrapper .signup-form{
+        display:none;
+        margin-bottom: 5%;
+        transition: 2s;
+    }
+  
+    .signup-form h1{
+        text-align: center;
+      margin: 5px 0 20px;
+    }
+    .signup-form h1::after{
+        content: '';
+        width: 55px;
+        height: 4px;
+        position: absolute;
+        left: 42%;
+        top: 16%;
+        transform: translateY(-50%);
+        background: white;
+        border-radius: 2px;
+        opacity: 0.8;
+        display: flex;
+    }
+    .signup-form button{
+        height: 32px;
+        width: 150px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        background: none;
+        border-radius: 5px;
+        border: none;
+        margin: -2% 30%;
+        padding: -8px;
+        background: linear-gradient( to left, orangered,orange);
+    }
+    .signup-form button:hover{
+        opacity: 0.5;
+        color: white;
+        transition: 0.4s;
+        background: linear-gradient( to right, orangered,orange);
+    }
+    .signup-form input{
+        text-align: center;
+        height: 30px;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+    .inputbox label span{
+        margin-left: -30%;
+    }
+  
+    .signup-form p a{
+        color: aqua;
+        font-size: 16px ;
+        text-decoration:1px underline;
+    }
+    .signup-form #checkbox{
+        width: 18px;
+        height: 16px;
+        margin-left: 32%;
+        cursor: pointer;
+    }
+    .signup-form p a:hover{
+        color:orange;
+        text-decoration: underline 1px white;
+        transition: 0.4s;
+    }
+    .signup-form p{
+        padding-top: 10px;
+    }
+    .signup-form p span.login-btn{
+        border: none;
+        box-shadow: 1px 1px 2px orange;
+        border-radius: 4px;
+        height: 30px;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        margin-left: 2%;
+    }
+    .signup-form p span.login-btn:hover{
+        background: linear-gradient( to right, orangered,orange);
+        transition: 0.2s;
+        opacity: 0.4;
+      box-shadow: none;
+    }
+
+    /*...............................................About GTS section............................*/
+    .about{
+        margin: 10px 40px;
+    }
+    .about p{
+        padding: 6px;
+        font-size: 18px;
+    }
+    
+  
+    /*--------------------------------------------------------Footer-section.....................*/
+    footer .copyright {
+        background:grey;
+        height: 60px;
+        width: 100%;
+        bottom:0;
+        left: 0;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        position: fixed;
+        display: flex;
+        align-items:center;
+       text-align: center;
+       justify-content: space-evenly;
+    }
+    
+.copyright span a{
+    color: white;
+    padding: 12px;
+    margin-left:20px; 
+    align-items:center;
+   text-align: center;
+   justify-content: space-evenly;
+}
+.copyright span i.fa-whatsapp:hover{
+    color: green;
+}
+.copyright span i.fa-facebook:hover{
+    color: blue;
+}
+.copyright span i.fa-instagram:hover{
+    color: brown;
+}
+.copyright span i.fa-twitter:hover{
+    color: darkblue;
+}
+.copyright span i.fa-linkedin:hover{
+    color: blue;
+}
+.copyright span i.fa-discord:hover{
+    color: darkblue;
+}
+.copyright span i.fa-telegram:hover{
+    color:rgb(13, 144, 209);
+}
+
+      /*...................................................................................................................................
+      ......................................................................................................................................*/
+    
+    /*......................................................Resizing for small or big screens ...........................................*/
+    @media only screen and (max-width:600px){
+        body{
+            background: url(Images/Background-image.jpg);
+            backdrop-filter: blur(2px);
+            background-position: center;
+            color: white;
+        }
+        nav b i{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            
+        }
+        .navbar ul li{
+            display: none;
+        }
+        .navbar nav b{
+            font-size: 30px;
+         margin-left: 50px;
+        }
+        .navbar i.fa-solid{
+            font-size: 30px;
+        }
+        .navbar nav ul a button{
+            margin-top: 20px;
+        }
+    /*.......................................................Login section............................*/
+
+.wrapper{
+   
+    width: 75%;
+    height: 450px;
+    margin: auto;
+    display: flexbox;
+    justify-content: center;
+}
+.wrapper a button{
+    height: 60px;
+}
+.wrapper a button.login{
+    height: 30px;
+}
+/*.......................................................Footer..........................................*/
+footer .copyright{
+   
+    position: relative;
+    height: 100px;
+   
+}
+.copyright .rights{
+    margin-left:60px;
+}
+    }

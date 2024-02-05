@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new Account</title>
+    <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+</head>
+<body>
+
+<style>
+body{
+    background-image: url(Images/Background.avif);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;  
+  
+    display: block;     
+  }
+.wrapper{
+    background: transparent;
+    width: 30%;
+    height: 650px;
+    color: white;
+    border: 2px solid rgb(14, 224, 224);
+    box-shadow: 0px 0px 8px aqua;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(15px);
+    margin: auto;
+   margin-top: 30px;
+  
+  }
+
+.inputbox input{
+    width: 100%;
+    height: 25px;
+    border: solid 2px;
+    border-radius: 10px;
+    outline-color: white;
+    border-color: whitesmoke;
+    background: transparent;
+    color: white;
+  }
+  .Link{
+    color: aqua;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .Link:hover{
+    color: white;
+    text-decoration: underline aqua;
+  }
+
+  .reset-button{
+    width: 150px;
+    margin: -8px 30%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+.reset-button:hover{
+  color:aqua;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+button{
+  width: 50%;
+  margin: 5px 20%;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+  button a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  button a:hover{
+    color: aqua;
+  }
+  .btn:hover{
+    color:aqua;
+    opacity: 0.4;
+    transition: 0.5s;
+  }
+/*.....................................Resizing the appearance of the website on different screen sizes...............................*/
+
+  @media only screen and (max-width: 900px){
+    body{
+background-repeat:repeat;
+    }
+    .wrapper{
+      display:flexbox;
+      width: auto;
+      top: auto;
+      height: 100%;
+      position:relative;
+    }
+
+   .reset-button{
+      margin: 10px 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button{
+      margin: auto 20% ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+</style>
+
+<form>
+<div class="wrapper">
+<h1>Create an Account to continue</h1>
+<p>Please fill in this form to create an Account.</p>
+
+<form action="Login.html" method="post">
+
+  <div class="inputbox">
+    <label for="name" class="name"> Name: </label>
+    <input type="name" id="name" name="name" required placeholder="  Name">
+  </div> <br>
+
+<div class="inputbox">
+  <label for="username"> Username:</label>
+  <input type="text" id="username" name="Username" required placeholder="    Username">
+</div><br>
+
+<di class="inputbox">
+<label for="phonenumber">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="    123-45-678"  required maxlength="10"> 
+</di> <br><br>
+
+<div class="inputbox">
+  <label for="email"> Email:</label>
+  <input type="email" placeholder="    Email" name="email" required>
+</div> <br>
+
+<div class="inputbox">
+      <label for="password"> Password:</label>
+      <input type="password" placeholder="   Password"  name="password" required minlength="8" maxlength="10">
+</div> <br>
+
+<div class="inputbox">
+      <label for="repeatpassword"> Repeat Password: </label>
+      <input type="password" placeholder="  Repeat Password" name="repeatPassword" required minlength="8" maxlength="10">
+</div>
+<p>Already Registered?
+  <a href="Login.html" target="_self" class="Link">Log In</a>
+</p>
+
+<div class="Terms-Privacy">
+  <input type="checkbox" name="Terms-Privacy" id="Terms-Privacy" required> 
+  <label for="Terms-Privacy"> </labe>
+  By creating an account you agree to our:      
+<a class="Link" href="Privacy policy.html"><br><b>Terms & Conditions</b></a>
+<a class="Link" href="Privacy policy.html"><b> | Privacy Policies</b></a>
+<a class="Link" href="Privacy policy.html"><b>| Service & User Agreements</b></a>
+</div>
+<input type="reset" class="reset-button" value="Clear">
+​<div class="btn">
+<button class="login-button" type="submit">
+  <a href="index.html" target="_self" class="button" type="submit">LogIn</a>
+</button>
+</div></form></div>
+</form>
+<!-----------------
+<script>
+  alert(`Please Agree to our Terms and Privacy Policies! Click OK to Continue `);
+</script>
+------------------------------------->
+</body>
+</html>

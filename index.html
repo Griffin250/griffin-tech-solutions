@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <title>Griffin Tech-S</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+</head>
+<body>
+    <video  muted loop src="Images/video_preview_h264 (1).mp4"></video>
+   <!--------------------------------------------------------Navbar------------------------->
+    <div id="header" class="navbar">
+        <nav>
+            <b> <img src="Images/Website-logo.jpg" width="40px" height="40px">GRIFFIN TECH-S </b>
+            
+            <ul id="menu">
+                <a href="Hackers.html"><li>HACKERS</li></a>
+                <a href="Computer Basics.html"><li>COMPUTER BASICS</li></a>
+                <a href="Cybersecurity.html"><li>CYBER-SECURTY</li></a>
+                <a href="#"><li>RESOURCES</li></a>
+                <a href="#about"><button class="joinus-btn">JOIN US</button></a>
+                <a href="signup.html"><button class="register-btn">REGISTER</button></a>
+            </ul>
+        </nav>
+    </div>
+
+<!--------------------------------------------------Login form and Signup form------------------------------------------------>
+
+    <div class="wrapper">
+    <div class="login-form" id="loginForm"> 
+         <h1>Login</h1>
+    <form action="Cybersecurity.html" method="get" id="login">
+        <div class="inputbox"> 
+            <input type="text/email" name="name / Email" id="name" placeholder="Username / Email" required > <i class="fa-solid fa-user"></i>
+    </div><br>
+    
+    <div class="inputbox">
+       <input type="password" name="password" id="password" placeholder="Password" required minlength="4">  <i class="fa-solid fa-lock"></i> <br>
+        <input type="checkbox" id="checkbox"> 
+        <label for="checkbox"> <b class="b"> Show Pasword </b></label>
+    </div><br>
+    <div class="remember-me">
+    
+    <a class="Link" href="Reset_form.html"> Forgot Password / Username?</a>
+    </div><br>
+    <div>
+    <div class="buttons"> 
+            <span id="createAccount" class="create-account" onclick="opensignupForm()">  CREATE ACCOUNT </span>
+            <a href=""><button class="login" type="submit"> LOGIN</button></a> 
+    </div>         
+    </div>  <br>  
+    <h3> &UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;Or
+        &UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;&UnderBar;</h3><br>
+    <a class="facebook" href="https://www.facebook.com" title="Facebook"> <i class="fa-brands fa-facebook" style="color: #0659ea;"></i> Log in with Facebook</a>
+    <a class="twitter" href="https://www.twitter.com" title="Twitter">  <i class="fa-brands fa-square-x-twitter" style="color: #0a5ef0;"></i> Log in with Twitter </a>
+    </form></div>
+    
+    <!-------------------------------------------signup form---------------------------------->
+   <div class="signup-form" id="signupForm">
+    <h1>Register</h1>
+    <form action=""> 
+    <div class="inputbox">
+        <input type="text" name="name" id="name" placeholder="Full Name" required> <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="inputbox"> 
+        <input type="text" name="Username" id="Username" placeholder="Username" required >  <i class="fa-solid fa-user"></i>
+    </div>
+    <div class="inputbox"> 
+        <input type="email" name="email" id="email" placeholder="E-mail" required > <i class="fa-solid fa-at"></i> 
+    </div>
+    <div class="inputbox">
+        <input type="password" name="password" id="password" placeholder="Password" required minlength="4"> <i class="fa-solid fa-lock"></i> <br>
+        <input type="checkbox" id="checkbox"> 
+        <label for="checkbox" id="checkbox"> <span> Show Pasword </span></label>
+    </div><br>
+    <button type="submit" class="create-account">Create Account</button>
+    <div class="privacy-terms">
+      <label> <p> By registering , you agree with our <a href="Privacy policy.html"> Privacy Policy</a></p></label>  
+    </div>
+  
+    <p> Already have an Account? <span class="login-btn" id="loginButton" onclick="showLoginForm()"> Login here </span> </p>
+</form>
+   </div>
+</div>
+<!---------------------------------------------------Footer section------------------------------------->
+<footer id="footer">
+    <div class="copyright">
+        <p>
+        Copyright <b>©Griffin Tech-S, Inc-2023</b>
+        <span>
+   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+   <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+   <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="#"><i class="fa-brands fa-discord"></i></a>
+   <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    </span>
+   
+         </p>
+         <b class="rights">All Rights Reserved!</b>
+     </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1230 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+ background: rgb(172, 170, 170);
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+/*....................................scrollbar..........,.......................................................*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background:grey;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: black; 
+    height: 1px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #333232; 
+    }
+
+/*.............................................................Top Navbar for page 1....................................................*/
+/*..........................................................................................................................*/
+.navbar1{
+    position: absolute;
+    display:inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: right;
+    justify-content:space-evenly;
+    background:#011d35;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding-left: 8%;
+}
+.navbar1 a img.website-logo{
+    width: 36px;
+    height: 36px;
+    margin: -4px -5%;
+}
+.navbar1 a.web-name{
+    text-decoration: none;
+    color: orange;
+}
+.navbar1 a span{
+    margin-left: 8%;
+    font-size: 40px;
+    font-weight: bold;
+   
+}
+.navbar1 a.web-name:hover{
+color: orangered;
+}
+nav.navbar1 .fa-magnifying-glass{
+   margin-left: -30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar1 a.home{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    margin-left: 3%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px orange;
+  
+}
+.navbar1 a.home:hover{
+    box-shadow: 0 0 5px orangered;
+    opacity: 0.5;
+}
+.navbar1 a.navlist1{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: none;
+    height: 40px;
+    padding: 7px 4px;
+}
+.navbar1 a.navlist1:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 5px  orange;
+    transition: 0.2s;
+    opacity: 0.8;
+    height: 40px;
+}
+.navbar1 a button{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding:8px; 
+}
+
+    /*...................................Dropdown -menu for page 1............................................*/
+
+    .dropdown1{
+        position: relative;
+        display: inline-block;
+        margin:0 -2%;
+    }
+    .dropdown-button1{
+        background: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        height: 40px;
+        padding: 7px 4px;
+    }
+.dropdown-button1:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 5px  orange;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+    .dropdown1 a i{
+        margin-left: 6px;
+        font-size: 20px;
+    }
+    .dropdown-list1{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background: grey;
+        border-radius: 5px;
+        width: 200px;
+        margin:0 -40%;
+    }
+    
+    .dropdown-list1 a{
+        color: white;
+        font-size: 16px;
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        text-align: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .dropdown-list1 a:hover {
+        color:black;
+        opacity: 0.8;
+        font-weight: bold;
+        background-color: #ddd;}
+    .dropdown1:hover .dropdown-list1{display: block;}
+
+/*............................Top Navigation bar for Page 2 (Griffin Tech-S....................................................*/
+#myNav{
+    transition: top 0.2s;
+    top: 0;
+    width: 100%;
+    position:fixed;
+    background:#07375f;
+   height: 80px;
+   left: 0;
+   padding: 12px;
+}
+  .navbar2 a img{
+    margin: -6px 0;
+  }
+  .navbar2 span.menu-icon{
+      display: none;
+  }
+  .navbar2 a.logo{
+    float: left;
+    font-size: 42px;
+    font-weight: bold;
+    color: orange;
+    margin: 6px 0;
+    text-decoration: none;
+  }
+  .navbar2 .logo:hover{
+      color:orangered;
+      transition: 0.4s;
+      opacity: 0.8;
+  }
+ 
+  .nav-list2 a.close-button{
+      display: none;
+  }
+  
+  /*...............................Toggle button...............................................*/
+  .navbar1 .toggle i{
+      font-size: 25px;
+       padding: 12px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  .dark-mode .hero, .vertical-navbar{
+    background:#03101c;
+    color: white;
+} 
+
+  /*.............................................search-box 2.................................*/
+ .navbar2 .search-box{
+position:absolute;
+margin: -3% 32%;
+display:none;
+background: transparent;
+filter: blur(25%);
+  }
+ .navbar2 .search-box input{
+    width: 300px;
+    height: 50px;
+  }
+  .navbar2 .search-box a.close-button{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: -1% 8%;
+  }
+  .navbar2 i.fa-magnifying-glass{
+    font-size: 28px;
+    color: rgb(253, 251, 251);
+    margin-left: 5%;
+    padding: 12px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  /*..........................................................Top button..........................*/
+  .top-btn{
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background: rgb(246, 216, 164);
+    cursor: pointer;
+    float: right;
+   outline: none;
+   border-radius: 5px;
+   border: none;
+  padding: 16px;
+ display: flex;
+   bottom: 5px;
+   margin: 0 94.5%;
+   position: fixed;
+  }
+  .top-btn:hover{
+    opacity: 0.4;
+    background: orange;
+    box-shadow: 3px 3px 8px black;
+  }
+  /*.................................................... Navbar items.......................*/
+  .navbar2 .nav-list2{
+    float: right;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+  }
+
+  .navbar2 .nav-list2 ul li{
+    background: none;
+    margin:-10px 8px;
+    border-radius: 6px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+   .navbar2 .nav-list2 ul li:hover{
+      color: orangered;
+      box-shadow: 0 0 5px orange;
+      opacity: 0.8;
+      transition: 0.4s;
+  }
+  
+  .nav-list2 ul a i{
+      color: white;
+      font-size: 25px;
+    padding: -25px 0;
+  }
+  
+  
+  .nav-list2 a{
+      color: white;
+  }
+    /*.......................................................Top Navbar for Other pages......................................*/
+nav.navbar{
+    display:inline-flex;
+    position:absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: right;
+    justify-content:space-evenly;
+    background:#011d35;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+.navbar b{
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: orange;
+}
+.navbar b img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: -10px;
+}
+.navbar b:hover{
+    color: orangered;
+}
+.navbar a.home{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px orange;
+    height: 40px;
+}
+.navbar a.home:hover{
+    box-shadow: 0 0 5px orangered;
+    opacity: 0.5;
+}
+.navbar a.navlist{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+.navbar a.navlist:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 5px orange;
+    transition: 0.2s;
+    opacity: 0.8;
+    height: 40px;
+}
+.navbar a button{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding:8px; 
+}
+
+    /*...................................Dropdown-menu for Other Pages.......................................................*/
+
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-button{
+        background: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .dropdown a i{
+        margin-left: 6px;
+        font-size: 20px;
+    }
+    .dropdown-list{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background: grey;
+        border-radius: 5px;
+        margin-left: -50px;
+        width: 200px;
+    }
+    
+    .dropdown-list a{
+        color: white;
+        font-size: 16px;
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        text-align: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .dropdown-list a:hover {
+        color:black;
+        opacity: 0.8;
+        background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-list{display: block;}
+    
+
+    /*.................................................CS Vertical Navbar........................................................*/
+    #VerticalNavbar{
+        height: 100%;
+        overflow-x: hidden;
+        position: fixed;
+        background: #eee;
+    }
+
+    .vertical-navbar{
+    width: 240px;
+    top: 0;
+    left: 0;
+    padding-top:4.7%;
+    }
+     
+    .vertical-navbar .web-name{
+    background:#011d35;
+    font-size: 36px;
+    font-weight: bold;
+    color: orange;
+    width: 226px;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    }
+    .vertical-navbar a img.website-logo{
+        width: 34px;
+        height: 34px;
+        margin: -4px 2%;
+}
+    .vertical-navbar .web-name:hover, .web-logo:hover{
+        background:#011d35;
+    }
+    .vertical-navbar .home-tab{
+        background: rgb(86, 85, 85);
+        font-size: 22px;
+        width: 240px;
+        height: auto;
+        font-weight: bold;
+        padding-left: 10px;
+        }
+
+    .vertical-navbar h3{
+        padding-left: 8px;
+        color: black;
+    }
+    
+    .vertical-navbar a{
+    background: #eee;
+    color: black;
+    font-size: 17px;
+    font-weight: 1200px;
+    display: block;
+    padding: 6px ;
+    text-decoration: none;
+    }
+    .vertical-navbar h2:hover{
+    background: none;
+    }
+    .active, .vertical-navbar a:hover{
+    background: rgb(74, 73, 73);
+    color: orange;
+    }
+
+
+/*...................................................Content section........................................................*/
+/*..........................................................................................................................*/
+.hero{
+    background: #eee;
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin:6% 20%;
+    overflow: hidden;
+}
+.hero1{
+    background: #eee;
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin:4%;
+    overflow: hidden;
+}
+.row1{
+    display: flex;
+}
+/*....................................................Advert page...............................................*/
+.adsense-page{
+    background: #eee;
+    height: 60vh;
+    width: 32%;
+    margin:4% 0%;
+    border-radius: 10px;
+}
+.advert1{
+ padding: 2% 2%;  
+ margin: 75% 0;
+}
+.advert2{
+    background: #eee;
+    margin:150% 0%;
+    padding: 5% 2%;
+    border-radius: 10px;
+}
+.mail-service{
+    background: #eee;  
+    height: 45vh; 
+    padding: 10% 1%;
+    margin: 16% 0%;
+    border-radius: 6px;
+}
+.mail-service h2{
+    margin: 1% 12%;
+}
+.mail-service p{
+    margin: 2% 8%;
+}
+.mail-service input{
+    width: 250px;
+    margin-left: 12%;
+}
+.mail-service input#checkbox{
+border: none;
+  width: 20px;
+  outline: none;
+  cursor: pointer;
+  margin:-5% 40%;
+}
+.mail-service button{
+    box-shadow: 0 0 5px;
+    background: linear-gradient( to left, orangered, rgb(247, 207, 134));
+    border: none;
+    height: 30px;
+    font-weight: 500px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 0% 25%;
+    cursor: pointer;
+}
+.mail-service button:hover{
+    background: linear-gradient( to right, orangered, rgb(247, 207, 134));
+    opacity: 0.6;
+}
+.mail-service span{
+    margin: 0% 4%;
+}
+.mail-service span a{
+    color: orangered;
+    font-weight: bold;
+    text-decoration: none;
+}
+.mail-service span a:hover{
+    color: black;
+    text-decoration: underline 1.5px orange;
+}
+.side-adverts{
+    background:#011d35;
+box-shadow: 0 0 4px orangered;
+border: none;
+width: 400px;
+height: 300px;
+}
+
+/*...........................................................................................................................*/
+body hr.breaklines{
+    border: grey 0.1px solid;
+    width: 100%;
+}
+
+.content{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding:1% 4%;
+    font-size: 18px;
+    top: 0; 
+    display: none;
+    transition: 0.01s;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow:0px 0px 3px black,
+                0px 0px 0px black;
+}
+#content1 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#content1{ 
+    display: block;  
+}
+#Griffintechs{
+    display: block;
+}
+.review-date{
+    font-size: 18px;
+    font-style: italic;
+    color: grey;
+    margin: -20px 60px 20px;
+    padding-left: 38%;
+}
+.content p.NB{
+    background: rgb(255, 189, 66);
+    height: auto;
+    padding: 10px 120px;
+}
+.content p.NB span{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+.content p span.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content ol li span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.content p a{
+    color: orangered;
+}
+.content p span a.link{
+    text-decoration: none;
+    font-weight: 24px;
+    color: orange;
+}
+.content p span a.link:hover{
+    color:orangered;
+    text-decoration: underline 1.5px orange;
+}
+.content .basic-skills{
+    font-weight: normal;
+    font-size: 15px;
+}
+.content .page-link{
+    text-decoration: underline 1px black;
+    font-weight: 24px;
+    font-weight: bold;
+    color: orange;
+}
+.content .page-link:hover{
+    color: black;
+    text-decoration: underline 1.5px orange;
+}
+
+.content ol a{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content ol a:hover{
+    color: orangered;
+}
+
+.content ol ul a{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content ol, ul a:hover{
+    color: black;
+}
+.content ul, ol, li{
+   padding: 5px;
+}
+.content img{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 900px;
+    max-height: 700px;
+    margin: auto;
+    border-radius: 16px; 
+    box-shadow: 1px 1px 5px grey;
+    background:rgb(228, 204, 159);
+
+}
+
+.content img.small-img{
+    height: auto;
+    width: auto;
+    background:#47759d;
+}
+table{
+    border: 2px solid grey;
+}
+table tr td{
+    padding: 4px 28px;
+}
+
+table tr td.one{
+background: grey;
+}
+.port-list{
+    box-shadow: 1px 1px 4px grey;
+    padding:8px 20%;
+}
+.conversation{
+    box-shadow: 1px 1px 4px grey; 
+    padding:8px 10%;
+}
+/*................................................Read more/Less Buttons...........................................*/
+.content .more-content1{
+    display: none;
+}
+.content .more-content2{
+    display: none;
+}
+
+.readmore-less-btn{
+    background: linear-gradient(to right, rgb(18, 88, 240), rgb(187, 0, 255));
+    height: 30px;
+    width:auto;
+    margin-left: 16%;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.readmore-less-btn:hover{
+    background-image: linear-gradient(to left, rgb(18, 88, 240), rgb(187, 0, 255));  
+    transition: 0.2s;
+    opacity: 0.8;
+   
+}
+
+/*......................................darkweb faqs....................*/
+.darkweb-faqs{ 
+  margin-top: 12px;
+  padding: 12px;
+}
+.darkweb-faqs a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.active, .darkweb-faqs a:hover{
+    color:orange;
+}
+.darkweb-faqs .fa-chevron-down{
+    float: right;
+} 
+
+.faq-content{
+    display: none;
+}
+
+.content div.faq{
+ display: grid;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  row-gap: 50px;
+}
+
+.xxx a{
+    background: rgb(246, 243, 243);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    column-gap: 20px;
+    text-decoration: none;
+} 
+.xxx a:hover{
+    color: orange;
+}
+
+/*.................................................Advert frames...................................................*/
+iframe.tool-list-frame{
+    width: 800px;
+    height: 250px;
+    margin-left: 6%;
+    border: none;
+    border-radius: 15px;
+}
+iframe.big-ad-frame{
+    width: 800px;
+    height: 400px;
+    margin-left: 10%;
+    border: none;
+    background: grey;
+    border-radius: 15px;
+}
+
+iframe.medium-ad-frame{
+    width: 720px;
+    height: 300px;
+    margin-left: 10%;
+    background-image: url(Images/Background-image.jpg);
+    border-radius: 12px; 
+    border: none;
+}
+iframe.small-ad-frame{
+    width: 420px;
+    height: 250px;
+    margin-left: 30%;
+    background-image: url(Images/Background-image.jpg); 
+    border-radius: 12px; 
+    border: none;
+}
+
+/*............................................Hackers content  page...................................................................*/
+/*...............................................................................................................................*/
+
+.hero-content{
+    height: 100%;
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding:1% 7%;
+    font-size: 18px;
+    top: 0; 
+}
+
+.hero-content img{
+    width: 900px;
+  max-height: 700px;
+    margin: auto;
+    border-radius: 16px; 
+    box-shadow: 1px 1px 4px grey;
+    background:rgb(228, 204, 159);
+    color: red;
+}
+.hero-content ul, ol li span{
+    font-weight: bold;
+} 
+
+.hero-content p span.bold{
+    font-weight: bold;
+    font-size: 28px;
+    color: orangered;
+    margin-left: 20%;
+}
+
+.hero-content img.small-img{
+    height: 300px;
+    width: 600px;
+    background:#47759d;
+}
+
+/*...............................................................................................................................*/
+/*............................................................................comment  section....................................*/
+
+.comment-btn{
+    box-shadow: 0 0 5px;
+    background: linear-gradient( to left, rgb(156, 155, 154),rgb(247, 207, 134));
+    width: 540px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 4% 16%;
+}
+.comment-btn h3{
+    float: left;
+    margin: 20px 1%;
+    
+    font-weight: normal;
+}
+.comment-btn .btn1{
+    float: right;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    background: linear-gradient( to left, orangered,orange);
+  
+}
+.comment-btn .btn1:hover{
+    background: linear-gradient( to right, orangered,orange);
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+/*............................................Bottom Buttons................................................*/
+button.next, .previous{
+    height: 30px;
+    width: auto;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient( to left, orangered,orange);
+}
+
+
+button.next{
+    float: right;
+}
+button.next:hover, .previous:hover{
+    background: linear-gradient( to right, orangered,orange);
+    transition: 0.4s;
+    opacity: 0.4; 
+}
+
+
+.fa-thumbs-up{
+    margin-left: 25%;
+    font-size: 28px;
+    cursor: pointer;
+}
+.fa-bookmark{
+    margin-left: 35%;
+    font-size: 28px;
+    cursor: pointer;
+}
+.fa-bookmark:active{
+    background: black;
+}
+/*....................................... Text Area section...................................................*/
+.comment-section{
+    margin-left: 5%;
+    text-align: center;
+    display: none;
+
+}
+.comment-section textarea{
+    width: 800px;
+    height: 200px;
+    resize: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px orange;
+}
+ ::placeholder{
+    color: rgb(11, 11, 11);
+ }
+ input{
+    width: 400px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    outline: 0.2px orange solid;
+ }
+ input::placeholder{
+    font-weight: 100px;
+ }
+    button.push-btn{
+        border-radius: 8px;
+        width: auto;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        color: white;
+        cursor: pointer;
+        background: linear-gradient( to left, orangered,orange);
+    }
+    button.push-btn:hover{
+        background: linear-gradient( to right, orangered,orange);
+    transition: 0.4s;
+    opacity: 0.4;
+    }
+
+/*...............................................................................................................................*/
+/*........................................................Newsletter-section.....................................*/
+.country{
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 100px;
+    margin-right: 10px; 
+    height: 20px;
+}
+.newsletter{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.newsletter-sub-btn{
+border-radius: 10px;
+width: 100px;
+height:35px;
+cursor: pointer;
+outline: none;
+border-color:   white;
+background-color:rgb(230, 239, 248);
+}
+.newsletter-sub-btn:active{
+    border-color: red;
+}
+
+input.daily-news-box{
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-name-email{
+  border-radius: 6px;
+  width: 400px;
+  height: 40px;
+  outline: none;
+  border-color:  white;
+  background-color: rgb(236, 244, 250);
+}
+
+.newsletter-name-email :hover{
+    border-color: red;
+}
+
+/*............................................Footer section...................................................................*/
+/*...............................................................................................................................*/
+.footer1{
+    background:#011d35;
+    text-align: center;
+    justify-content: center;
+    width:75%;
+    height: 110vh;
+    border-radius:16px;
+    margin-left: 20%;
+    position: relative;
+}
+
+.footer2{
+    background:#011d35;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    height: 110vh;
+    border-radius:16px;
+}
+footer .h2-footer{        
+    color: orange;
+    font-size: 40px;
+    text-shadow:0px 0px 10px orange,
+                0px 0px 50px orange;
+}
+
+footer a.GTS-logo{
+    mix-blend-mode: multiply;
+    justify-content: space-around;
+}
+.GTS-logo{
+    height:30%;
+    width: 30%;
+}
+.column{
+        float: left;
+        width: 25%;
+        color: white;
+        text-decoration: none;
+}
+.column h3{
+   font-weight: bold;
+}
+.column ul.footer-links li{
+    list-style: none;
+    padding: 4px;
+  
+}
+.column ul li a{
+  color: orange; 
+  font-size: 15px;
+  font-weight:normal;
+  text-decoration: none;
+}
+.column ul li a:hover{
+    color: orange;
+    text-decoration: underline 1px solid white; 
+    opacity: 0.4;
+}
+.row :after {
+    text-decoration: none;
+        display:table;
+        clear: both;
+}
+.column:nth-child(1), .column:nth-child(2){
+width: 20%;
+}
+
+.column:nth-child(4){
+    width: 35%;
+} 
+.column a.email{
+    color: orange;
+    font-size: 18px;
+}
+.column a.email:hover{
+    color: white;
+}
+
+.last-column{
+    float: right;
+    width: 20%;
+    margin-top:5%;
+    border-radius: 30px;
+    height: 40px;
+}
+.footer2 .last-column{
+    float:right;
+    width: 20%;
+    margin-top:2%;
+    border-radius: 30px;
+    height: 40px;
+}
+.last-column a{
+    text-decoration: none;
+    color: white;
+}
+.last-column h3{
+    color: white;
+    font-weight: bold;
+}
+.last-column a:hover{
+    color: orange;
+    font-size: 17px;
+    opacity: 0.5;
+    text-decoration: underline 0.1px white;
+}
+
+/*...............................................Footer policy popup.................................................*/
+footer .footer-popup{
+    position: fixed;
+    background: rgb(241, 228, 206);
+    width: 100%;
+    height: 90px;
+    filter: blur(75%);
+    bottom: 0px;
+    left: 0;
+}
+
+footer .footer-popup p{
+    margin: 5px;
+    font-weight: 500px;
+}
+footer .footer-popup  a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer .footer-popup a:hover{
+    color: black;
+    text-decoration: underline 1.5px solid black;
+}
+.policy-options button.policy-settings, .accept-all{
+float: right;
+margin: 0 20px;
+border: none;
+box-shadow: 0 0 5px black;
+background: none;
+cursor: pointer;
+  width: auto;
+  height: 32px;
+  font-weight: bold;
+  color: orangered;
+  border-radius: 6px;
+}
+
+.policy-options button.policy-settings:hover, .accept-all:hover{
+    color: black;
+    transition: 0.4s;
+    opacity: 0.8; 
+}
+/*...........................................Social icons in the footer........................................................*/
+/*...............................................................................................................................*/
+
+.social-icons .fa-brands{
+    font-size: 18px;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    color: grey;
+    border: orange 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.social-icons .fa-brands:hover{
+    color: orangered;
+    box-shadow: 0px 0px 5px orange inset,
+                 0px 0px 5px orange;
+    transform: translateY(10px);
+}

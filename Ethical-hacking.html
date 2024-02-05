@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Tech-S</title>
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+  <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+</head>
+<style>
+    *{
+        box-sizing: border-box;  
+    }
+    .wrapper{
+        padding: 4%;
+        font-size: 20px;
+        color: black;
+        background:whitesmoke;
+        width: 80%;
+       margin: auto;
+       border-radius: 10px;
+    }
+     body{
+        background:grey;
+        }
+/*...................................................Navbar.................................*/
+nav.navbar{
+    display:inline-flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+}
+.navbar b{
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: orange;
+}
+.navbar b:hover{
+    color: orangered;
+}
+.navbar b img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: -10px;
+}
+.navbar a.home{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px orange;
+    height: 40px;
+}
+.navbar a.home:hover{
+    box-shadow: 0 0 5px orangered;
+    opacity: 0.5;
+}
+.navbar a.navlist{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+.navbar a.navlist:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 5px orange;
+    transition: 0.2s;
+    opacity: 0.8;
+    height: 40px;
+}
+.navbar a button{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding:8px; 
+}
+
+    /*...................................Dropdown -menu--------------......................*/
+
+.dropdwn{
+    position: fixed;
+    display: inline-block;
+}
+.dropdown-button{
+    background: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.dropdown a i{
+    margin-left: 6px;
+    font-size: 24px;
+}
+.dropdown-list{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: grey;
+    box-shadow: 0 0 5px orange;
+    border-radius: 5px;
+    margin-left: -50px;
+    min-width: 180px;
+    position: fixed;
+}
+
+.dropdown-list a{
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    text-align: left;
+}
+.dropdown-list a:hover {
+    color: orangered;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #ddd;}
+
+.dropdown:hover .dropdown-list{display: block;}
+
+
+/*.....................................................Main section......................*/
+.wrapper h1{
+    font-size: 36px;
+    font-weight: 100px;
+}
+.wrapper p span{
+    font-weight: bold;
+    font-size: 24px; 
+}
+.wrapper img{
+    width: 800px;
+    height: 500px;
+    margin-left: 15%;
+    border-radius: 16px;
+}
+/*...............................................Softwarelist-......................*/
+.wrapper .softwarelist ul li{
+list-style: none;
+display: flex;
+display: none;
+float: right;
+overflow: hidden;
+}
+.wrapper .softwarelist ul li img{
+    height: 90px;
+    width: 90px;
+    padding: 5px;
+}
+
+.wrapper .softwarelist ul li img:hover {
+transform: scale(1.5); 
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+  border-radius: 12px;
+}
+
+    /*..........................................comment section....................*/
+.comment-section{
+    margin-left: 12%;
+    text-align: center;
+
+}
+textarea{
+    width: 800px;
+    height: 200px;
+    resize: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px orange;
+}
+ ::placeholder{
+    color: rgb(11, 11, 11);
+ }
+ input{
+    width: 400px;
+    height: 36px;
+    border-radius: 5px;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    outline: 0.2px orange solid;
+ }
+ input::placeholder{
+    font-weight: 100px;
+ }
+    button{
+        border-radius: 8px;
+        width: auto;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        color: white;
+        background: linear-gradient( to left, orangered,orange);
+    }
+    button:hover{
+        background: linear-gradient( to right, orangered,orange);
+    transition: 0.4s;
+    opacity: 0.4;
+    }
+    /*--------------------------------------------------------Footer-section.....................*/
+    footer .copyright{
+        background:grey;
+        height: 60px;
+        width: 100%;
+        bottom:0;
+        left: 0;
+        color: white;
+        border-radius: 5px;
+        position: fixed;
+        align-items:center;
+       text-align: center;
+    }
+    .copyright p{
+        font-weight: bold;
+        padding-top: 12px;
+        margin-left: 100px;
+    }
+    .copyright .rights{
+        margin: auto;
+    }
+    .copyright span {
+        
+        font-size: 20px;
+    }
+    .copyright span i{
+        padding-right: 5px; 
+    }
+    .copyright .fa-brands{
+        color: white;
+        margin-left: 10px;
+    }
+    .copyright span i.fa-whatsapp:hover{
+    color: green;
+}
+.copyright span i.fa-facebook:hover{
+    color: blue;
+}
+.copyright span i.fa-instagram:hover{
+    color: brown;
+}
+.copyright span i.fa-twitter:hover{
+    color: darkblue;
+}
+.copyright span i.fa-linkedin:hover{
+    color: blue;
+}
+.copyright span i.fa-discord:hover{
+    color: darkblue;
+}
+.copyright span i.fa-telegram:hover{
+    color:rgb(13, 144, 209);
+}
+
+</style>
+<body>
+  
+
+       <!--------------------------------------------------------Navbar------------------------->
+        <nav class="navbar">
+            <b> <img src="Images/Website-logo.jpg" width="40px" height="40px"> GRIFFIN TECH-S</b>
+
+                <a class="home" href="index.html">HOME</a>
+                
+                <!------------------------------Dropdown-menu--------------------->
+                <div class="dropdown">
+                    <a class="dropdown-button">LEARN <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-list">
+                        <a href="Cybersecurity.html">Cyber Security</a>
+                        <a href="#">Ethical Hacking</a>                 
+                        <a href="#">Data Science</a>
+                        <a href="#">Networking</a>
+                        <a href="GMAIL HACKING.html">Gmail Hacking</a>
+                        <a href="#">System Administration</a>
+                        <a href="#">Web Development</a>
+                        <a href="#">Linux Systems</a>
+                        <a href="#">Reviews</a>
+                    </div>
+                </div> 
+                <a class="navlist" href="Hacking-tools.html">HACKING TOOLS</a>
+                <a class="navlist" href="#">ETHICAL HACKING</a>
+                <a class="navlist" href="About.html" target="_blank">ABOUT</a>
+            </di>
+            </nav>
+
+            
+<div class="wrapper">
+
+
+     <!--------------------------------------------------------Software list----------------------------------->
+    
+    <marquee>
+ <div class="softwarelist">
+        <ul>
+            <li><img src="Images/ICONS/tool-logo-aircrack-ng.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-burp.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-crackmapexec.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-ffuf.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-hydra.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-john.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-maltego.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-metasploit.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-nmap.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-powershell-empire.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-responder.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-sqlmap.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-starkiller.svg" alt=""></li>
+            <li><img src="Images/ICONS/tool-logo-wireshark.svg" alt=""></li>
+        </ul>
+     </div></marquee>
+     
+<!---------------------------------------------------------Comment section-------------------------------->
+<hr>
+     <div class="comment-section">
+
+        <h1>Leave a Comment</h1>
+        <textarea placeholder="Write anything here..."> </textarea><br>
+        <div class="name">
+            <input type="name" id="name" placeholder="Name *">
+        </div><br>
+        <div class="email">
+            <input type="email" id="email" placeholder="E-mail *">
+        </div><br>
+        <button type="submit"> Post a Comment</button>
+        
+        </div>
+    </div>
+    <!---------------------------------------------------Footer section------------------------------------->
+<footer id="footer">
+    <div class="copyright">
+        <p>
+        Copyright <b>©Griffin Tech-S, Inc-2023</b>
+        <span>
+   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="#"><i class="fa-brands fa-discord"></i></a>
+   <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    </span>
+    <i> @griffintechsolutions.com</i>
+         </p>
+         <b class="rights">All Rights Reserved!</b>
+     </div>
+</footer>
+</body>
+</html>

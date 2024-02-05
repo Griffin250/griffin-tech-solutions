@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Griffin Tech Solutions</title>
+    <link rel="stylesheet" href="Cybersecurity.css">
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+</head>
+<body>
+
+    <!--------------------------------------Navigation bar------------------------------------------------------------>
+    <nav class="navbar2" id="myNav">
+        <span class="menu-icon" onclick="openmenu()">&#9776;</span>
+        <a class="logo" href="Griffin Tech-S.html"> <img src="Images/Website-logo.jpg" width="40px" height="40px"> GRIFFIN TECH-S </a>
+        <i class="fa-solid fa-magnifying-glass" onclick="openSearch()"></i>
+
+    <div class="search-box">
+    <a href="javscript:void(0)" class="close-button" onclick="closeSearchBar()"> <i class="fa-solid fa-x"></i></a>
+    <input type="search" class="search" name="searchbox" id="searchbox" placeholder="Search here..." >     
+    <button>Search</button>
+    </div>
+</form>   
+    <!---------------------------------Light toggle-------------------------------->
+<label class="toggle" onclick="myFunction()">
+  <i class="fa-solid fa-circle-half-stroke"></i>
+</label>
+
+<div class="nav-list2" id="NavList2">
+  <ul id="sidemenu">
+    <a href="javscript:void(0)" class="close-button" onclick="closemenu()">&times;</a>
+    <a href="index.html" class="home"><li> HOME</li></a>
+      <a href="About.html" class="nav-list2"><li>  ABOUT</li></a>
+      <a href="Teams.html" class="nav-list2"><li> TEAM</li></a>
+      <a href="malto:griffintechsolutions@gmail.com" class="nav-list2"> <li> SUPPORT</li></a>
+      <a href="#footer" class="nav-list2"><li>  CONTACT</li></a>
+  </ul>
+</div>
+</nav><br><br><br><br>
+<!----------------------------------------------------------------------Row division--------------------------------------->
+<div class="row1"> 
+<!------------------------------------------------------------------------Content section----------------------------------------->
+<div class="hero1" id="column">
+<div class="content" id="Griffintechs">
+  <!--------------------------------------------------------------IP Address and Data Structures------------------------------>
+  <h1> DATA STRUCTURES AND IP ADDRESS</h1>
+  <p class="review-date"> Last update: Dec 10, 2023 by  Griffin</p>
+  <img src="Images/ipaddress.jpg">
+  <p>An <span>IP Address</span> represents an Internet Protocol address. 
+    A unique address that identifies the device over the network. It is almost like a set of rules governing the structure of data sent over the Internet or through a local network.<br>
+     An IP address helps the Internet to distinguish between different routers, computers, and websites. 
+    It serves as a specific machine identifier in a specific network and helps to improve visual communication between source and destination.</p>
+    
+    <p><span>IP address structure: </span>  IP addresses are displayed as a set of four digits- the default address may be 192.158.1.38. 
+    Each number on the set may range from 0 to 255. Therefore, the total IP address range ranges from 0.0.0.0 to 255.255.255.255.</p>
+    
+        <iframe class="medium-ad-frame" src="Website-ad.html"> </iframe>
+
+<div class="port-list">
+  <p>IP address is basically divided into two parts: X1. X2. X3. X4 <br>
+    1. [X1. X2. X3] is the Network ID<br>
+    2. [X4] is the Host ID</p>
+</div>
+<h2>1. Network ID</h2>
+<p>It is the part of the left-hand IP address that identifies the specific network where the device is located. 
+In the normal home network, where the device has an IP address 192.168.1.32, the 192.168.1 part of the address will be the network ID.<br>
+ It is customary to fill in the last part that is not zero, so we can say that the device’s network ID is 192.168.1.0.</p>
+
+<h2>2. Hosting ID</h2>
+ <p> The host ID is part of the IP address that was not taken by the network ID.
+ Identifies a specific device (in the TCP / IP world, we call devices “host”) in that network.<br>
+ Continuing with our example of the IP address 192.168.1.32, the host ID will be 32- the unique host ID on the 192.168.1.0 network.</p>
+ <h2>Versions of IP Address: </h2>
+  <h3>1. <a href="##" class="link"> IPV4 </a>  (Internet Protocol Version 4)</h3> 
+    <p> It is the first version of Internet Protocol address. 
+    The address size of IPV4 is 32 bit number. In this Internet Protocol Security (IPSec) with respect to network security is optional. 
+    It is having 4,294,967,296 number of address still we are seeing a shortage in network addresses as the use of network & virtual devices are increasing rapidly.</p>
+   
+    <button class="readmore-less-btn" onclick="openIPV4()">Read more about IPV4...</button>
+
+    <div class="more-content1" id="MoreContent1">
+    <h2>What is IPV4?</h2>
+    <hr class="breaklines">
+<p>IP stands for Internet Protocol and v4 stands for Version Four (IPv4). 
+IPv4 was the primary version brought into action for production within the ARPANET in 1983. <br>
+  IP version four addresses are 32-bit integers which will be expressed in decimal notation. 
+  Example- 192.0.2.126 could be an IPv4 address. </p>
+<h2>Parts of IPV4</h2>
+<ul>
+  <li><span>Network parts:</span>The network part indicates the distinctive variety that’s appointed to the network. 
+    The network part conjointly identifies the category of the network that’s assigned.
+  </li>
+  <li> <span> Host part:</span>The host part uniquely identifies the machine on your network. 
+    This part of the IPv4 address is assigned to every host. 
+    For each host on the network, the network part is the same, however, the host half must vary.<br><br>
+  </li>
+  <li>  <span> Subnet number:</span>This is the nonobligatory part of IPv4. 
+    Local networks that have massive numbers of hosts are divided into subnets and subnet numbers are appointed to that. </li>
+</ul>
+<iframe src="Blocked-ad.html" class="small-ad-frame"></iframe>
+<h2>Characteristics of IPV4</h2>
+<ul>
+  <li>IPv4 could be a 32-Bit IP Address.</li>
+  <li> The number of header fields is twelve and the length of the header field is twenty.</li>
+  <li> It has Unicast, broadcast, and multicast style of addresses.</li>
+  <li> IPv4 supports VLSM (Virtual Length Subnet Mask).</li>
+  <li> IPv4 uses the Post Address Resolution Protocol to map to the MAC address.</li>
+  <li>  RIP may be a routing protocol supported by the routed daemon.</li>
+  <li>Networks ought to be designed either manually or with DHCP.</li>
+  <li>Packet fragmentation permits from routers and causing host.</li>
+</ul>
+
+<h2>Advantages of IPV4</h2>
+<ul>
+  <li>IPv4 security permits encryption to keep up privacy and security.</li>
+  <li>IPV4 network allocation is significant and presently has quite 85000 practical routers.</li>
+  <li>It becomes easy to attach multiple devices across an outsized network while not NAT.</li>
+  <li> This is a model of communication so provides quality service also as economical knowledge transfer.</li>
+  <li>IPV4 addresses are redefined and permit flawless encoding.</li>
+  <li>Routing is a lot of scalable and economical as a result of addressing is collective more effectively.</li>
+  <li>Data communication across the network becomes a lot of specific in multicast organizations</li>
+  <li>Limits net growth for existing users and hinders the use of the net for brand new users.</li>
+  <li>Internet Routing is inefficient in IPv4.</li>
+  <li>IPv4 has high System Management prices and it’s labor-intensive, complex, slow & frequent to errors.</li>
+  <li>Security features are nonobligatory.</li>
+  <li>Difficult to feature support for future desires as a result of adding it on is extremely high overhead since 
+  it hinders the flexibility to attach everything over IP.</li>
+</ul>
+<h2>Limitations of IPV4</h2>
+<ul>
+  <li>IP relies on network layer addresses to identify end-points on network, and each network has a unique IP address.</li>
+  <li>The world’s supply of unique IP addresses is dwindling, and they might eventually run out theoretically.</li>
+  <li>If there are multiple host, we need IP addresses of next class.</li>
+  <li>Complex host and routing configuration, non-hierarchical addressing, difficult to re-numbering addresses,
+     large routing tables, non-trivial implementations in providing security, QoS (Quality of Service), mobility and multi-homing, multicasting etc...
+     are the big limitation of IPv4 so that’s why IPv6 came into the picture.</li>
+</ul>
+<button class="readmore-less-btn" onclick="closeIPV4()">Read less...</button>
+<hr class="breaklines">
+  </div>
+
+
+   <h3> 2.<a href="##" class="link"> IPV6</a> (Internet Protocol Version 6):</h3>
+    <p>  It is the recent version of Internet Protocol address. 
+      The address size of IPV6 is 128 bit number. In this Internet Protocol Security (IPSec) with respect to network security is mandatory. 
+      It allows 3.4 x 10^38 unique IP addresses which seems to be more than sufficient to support trillions of internet devices present now or coming in future.</p>
+      
+ <button class="readmore-less-btn" onclick="openIPV6()">Read more about IPV6...</button>
+
+ <div class="more-content2" id="MoreContent2">
+  <h2>What is IPV6?</h2>
+  <hr class="breaklines">
+  <img src="Images/IPV6.png">
+  <p>IP address is your digital identity. It’s a network address for your computer so the Internet knows where to send you emails, data, etc.</p>
+ <div class="port-list">
+  <i>IP address determines who and where you are in the network of billions of digital devices that are connected to the Internet.</i>
+ </div>
+ <p>IPv6 or Internet Protocol Version 6 is a network layer protocol that allows communication to take place over the network. 
+IPv6 was designed by Internet Engineering Task Force (IETF) in December 1998 with the purpose of superseding the IPv4 due to the global exponentially growing internet users.</p>
+
+ <h2>Types of IPV6</h2> Now that we know about what is IPv6 address let’s take a look at its different types.
+ <ul>
+  <li><span>Unicast addresses:</span> It identifies a unique node on a network and usually refers to a single sender or a single receiver.</li>
+  <li><span>Multicast addresses:</span> It represents a group of IP devices and can only be used as the destination of a datagram.</li>
+  <li><span>Anycast addresses:</span> It is assigned to a set of interfaces that typically belong to different nodes.</li>
+ </ul>
+
+ <h2>Advantages of IPV6</h2>
+ <ul>
+  <li>Reliability.</li>
+  <li><span>Faster speeds:</span> IPv6 supports multicast rather than broadcast in IPv4.
+  This feature allows bandwidth-intensive packet flows (like multimedia streams) to be sent to multiple destinations all at once.</li>
+  <li><span>Stronger Security:</span>  IPSecurity, which provides confidentiality, and data integrity, is embedded into IPv6.</li>
+  <li>Routing efficiency.</li>
+  <li><span>Most importantly it’s the final solution for growing nodes in Global-network.</span></li>
+
+ </ul>
+ <h2>Disadvantages of IPV6</h2>
+ <ul>
+  <li> <span>Conversion:</span> Due to widespread present usage of IPv4 it will take a long period to completely shift to IPv6.</li>
+  <li> <span>Communication:</span>IPv4 and IPv6 machines cannot communicate directly with each other. <br>
+  They need an intermediate technology to make that possible.</li>
+ </ul>
+ <button class="readmore-less-btn" onclick="closeIPV6()">Read less...</button>
+ <hr class="breaklines">
+</div>
+
+
+<h2>IPV4 vs IPV6</h2>
+<img src="Images/IPv4-vs-IPv6.png">
+<p>The common type of IP address (is known as IPv4, for “version 4”). Here’s an example of what an IP address might look like:</p>
+<div class="port-list"> <p>25.59.209.224</p></div>
+<p>An IPv4 address consists of four numbers, each of which contains one to three digits, with a single dot (.) separating each number or set of digits. 
+Each of the four numbers can range from 0 to 255. This group of separated numbers creates the addresses that let you and everyone around the globe to send and retrieve data over our Internet connections.<br> 
+The IPv4 uses a 32-bit address scheme allowing to store 2^32 addresses which is more than 4 billion addresses. To date, it is considered the primary Internet Protocol and carries 94% of Internet traffic.
+ Initially, it was assumed it would never run out of addresses but the present situation paves a new way to IPv6, let’s see why? An IPv6 address consists of eight groups of four hexadecimal digits. <br>
+Here’s an example IPv6 address:</p>
+<div class="port-list"><p>3001:0da8:75a3:0000:0000:8a2e:0370:7334</p></div>
+<p>This new IP address version is being deployed to fulfil the need for more Internet addresses. It was aimed to resolve issues which are associated with IPv4.
+ With 128-bit address space, it allows 340 undecillion unique address space. IPv6 also called IPng (Internet Protocol next generation).</p>
+ <div class="port-list">
+  <i>IPv6 support a theoretical maximum of 340, 282, 366, 920, 938, 463, 463, 374, 607, 431, 768, 211, 456. <br>
+    To keep it straightforward, we will never run out of IP addresses again.</i>
+ </div>
+
+<h2>IP Address types</h2>
+<p>There are 4 types of IP Addresses- Public, Private, Fixed, and Dynamic.
+ Among them, public and private addresses are derived from their local network location, which should be used within the network while public IP is used offline.</p>
+<ol>
+  <li> <h3> Public IP address– </h3>
+<p>A public IP address is an Internet Protocol address, encrypted by various servers/devices.
+ That’s when you connect these devices with your internet connection. <br>
+This is the same IP address we show on our homepage. So why the second page? Well, not all people speak the IP language. 
+We want to make it as easy as possible for everyone to get the information they need. Some even call this their external IP address.
+ A public Internet Protocol address is an Internet Protocol address accessed over the Internet. <br>
+ Like the postal address used to deliver mail to your home, the public Internet Protocol address is a different international Internet Protocol address assigned to a computer device.
+  The web server, email server, and any server device that has direct access to the Internet are those who will enter the public Internet Protocol address. 
+Internet Address Protocol is unique worldwide and is only supplied with a unique device.</p>
+  </li>
+  <li> <h3>Private IP address–</h3>
+  <p>Everything that connects to your Internet network has a private IP address. This includes computers, smartphones, 
+  and tablets but also any Bluetooth-enabled devices such as speakers, printers, or smart TVs.<br>
+ With the growing internet of things, the number of private IP addresses you have at home is likely to increase. 
+ Your router needs a way to identify these things separately, and most things need a way to get to know each other.<br>
+   Therefore, your router generates private IP addresses that are unique identifiers for each device that separates the network.</p></li>
+  <li> <h3> Static IP address–</h3> 
+  <p>A static IP address is an invalid IP address. Conversely, a dynamic IP address will be provided by the Dynamic Host Configuration Protocol (DHCP) server,
+     which can change. <br> The Static IP address does not change but can be changed as part of normal network management.</p>
+     <p>Static IP addresses are incompatible, given once, remain the same over the years. This type of IP also helps you get more information about the device.</p>
+  </li>
+<li> <h3> Dynamic IP address– </h3> 
+<p>It means constant change. A dynamic IP address changes from time to time and is not always the same.
+ If you have a live cable or DSL service, you may have a strong IP address. Internet Service Providers provide customers with dynamic IP addresses because they are too expensive. <br>
+Instead of one permanent IP address, your IP address is taken out of the address pool and assigned to you. After a few days, weeks, or sometimes even months, that number is returned to the lake and given a new number. <br>
+Most ISPs will not provide a static IP address to customers who live there and when they do, they are usually more expensive.
+ Dynamic IP addresses are annoying, but with the right software, you can navigate easily and for free. </p>
+</li>
+</ol>
+<h2>Types of Website IP Address</h2>
+<p>Website IP address is of two types- Dedicated IP Address and Shared IP Address. Let us discuss the two.</p>
+<ol>
+  <li> <h3>Dedicated IP address– </h3> 
+  <p>A dedicated IP address is one that is unique for each website. This address is not used by any other domain.
+   A dedicated IP address is beneficial in many ways. It provides increased speed when the traffic load is high and brings in increased security.
+   But dedicated IPs are costly as compared to shared IPs. </p>
+  </li>
+  <li> <h3>Shared IP address– </h3> 
+  <p>A shared IP address is one that is not unique.
+   It is shared between multiple domains. A shared IP address is enough for most users because common configurations don’t require a dedicated IP. </p>
+  </li>
+</ol>
+  <h2>IP Address Classification Based on Operational Characteristics:</h2>
+  <p>According to operational characteristics, IP address is classified as follows: </p>
+<ol>
+  <li><h3>Broadcast Addressing–</h3> 
+  <p>The term ‘Broadcast’ means to transmit audio or video over a network. A broadcast packet is sent to all users of a local network at once.<br>
+     They do not have to be explicitly named as recipients. The users of a network can open the data packets and then interpret the information, carry out the instructions or discard it.
+   This service is available in IPv4. The IP address commonly used for broadcasting is 255.255.255.255</p>
+  </li>
+  <iframe class="medium-ad-frame" src="Youtube.html"></iframe>
+  <li> <h3>Unicast Addressing–</h3> 
+  <p>This address identifies a unique node on the network. Unicast is nothing but one-to-one data transmission from one point in the network to another. 
+    It is the most common form of IP addressing. This method can be used for both sending and receiving data. It is available in IPv4 and IPv6. </p>
+  </li>
+  <li><h3>Multicast Addresses–</h3>
+  <p>These IP addresses mainly help to establish one-to-many communication. Multicast IP routing protocols are used to distribute data to multiple recipients. 
+  The class D addresses (224.0.0.0  to  239.255.255.255) define the multicast group.</p>
+  </li>
+  <li><h3>Anycast Addressing–</h3>
+  <p>In anycast addressing the data, a packet is not transmitted to all the receivers on the network. 
+  When a data packet is allocated to an anycast address, it is delivered to the closest interface that has this anycast address. </p>
+  </li>
+</ol>
+
+  <!--------------------------------------------------comment section---------------------------------------------->
+  <div class="comment-btn" id="CommentButton">
+    <h3> Share your thoughts in the Comments</h3>
+<button class="btn1" onclick="openCommentSection1()"> Add Your Comment</button>
+</div>
+ 
+<div class="comment-section" id="CommentSection1">
+    <h2>Leave a Comment</h2>
+    <textarea placeholder="Write anything here..."> </textarea><br>
+    <div class="name">
+        <input type="name" id="name" placeholder="Name *">
+    </div><br>
+    <div class="email">
+        <input type="email" id="email" placeholder="E-mail *">
+    </div><br>
+    <button type="submit" class="push-btn"> Post a Comment</button>
+</div>
+
+
+<button class="previous"><i class="fa-solid fa-chevron-left"></i>  Previous</button> 
+<i class="fa-solid fa-thumbs-up"></i> <i class="fa-regular fa-bookmark"></i>  
+<button class="next"> Next <i class="fa-solid fa-chevron-right"></i> </button>
+<hr class="breaklines">
+</div>
+</div>
+
+<div id="column" class="adsense-page">
+  <form action="">
+    <div class="mail-service">
+        <h2> &UnderBar;&UnderBar;Free Email services&UnderBar;&UnderBar;</h2>
+          <p>🚀 Tips & Tricks directly to your Inbox</p>
+          <input type="email" name="email" placeholder="   Your E-mail Address" required><br><br>
+          <input type="checkbox" checked id="checkbox">
+          <button type="submit">Get Tips & Tricks</button><br>
+          <div>
+             <span>We take your privacy seriously. 
+              Read our <a href="Privacy policy.html" target="_blank"> Privacy Policy</a></span>
+          </div>
+          
+          <p>🔒 No spam! <b> Unsubscribe any time!</b></p>
+      </div></form>
+
+  <div class="advert1" id="Advert1">
+  <h2>Bitcoin -The leading Crypto Currency</h2>
+  <iframe class="side-adverts" src="Bitcoin-ad.html"></iframe>
+</div>
+
+
+<div class="advert2" id="Advert2">
+  <iframe class="side-adverts" src="Ads.html"></iframe>
+  <h2>Advantages of IPV4</h2>
+<ul>
+  <li>IPv4 security permits encryption to keep up privacy and security.</li>
+  <li>IPV4 network allocation is significant and presently has quite 85000 practical routers.</li>
+  <li>It becomes easy to attach multiple devices across an outsized network while not NAT.</li>
+  <li> This is a model of communication so provides quality service also as economical knowledge transfer.</li>
+</ul>
+</div>
+
+<div class="mail-service">
+  <h2> - Free Email services -</h2>
+    <p>🚀 Tips & Tricks directly to your Inbox</p>
+    <input type="email" name="email" placeholder="   Your E-mail Address"><br><br>
+    <input type="checkbox" checked id="checkbox">
+    <button type="submit">Get Tips & Tricks</button><br>
+    <div>
+       <span>We take your privacy seriously. 
+        Read our <a href="Privacy policy.html" target="_blank"> Privacy Policy</a></span>
+    </div>
+    
+    <p>🔒 No spam! <b> Unsubscribe any time!</b></p>
+</div> </div>
+
+</div>
+</div><hr class="breaklines">
+  <!---------------------------------------------------------------Newsletter section----------------------------------->
+  <h2 style="text-align: center;"> <b>Subscribe to our Newsletter.</b></h2>
+
+  <p>
+    The early bird catches the worm. Our subscribers are a step ahead, when it comes to new items, special offers, sales or events in our department stores.
+    <br>The new bargains we announce twice per week in our selection are exactly described. Would you like to hear from us, too?
+  </p>
+
+<form name="submit-to-google-sheet" action="https://api.web3forms.com/submit" method="POST" class="newsletter">
+<div class="newsletter">
+    <label for="countries" style="margin-right: 10px;">
+    <h4>Choose Your Location</h4></label>
+    <select class="country" name="countries" id="countries"> 
+    <option value="Algeria">Algeria</option>
+    <option value="uganda">Uganda</option>
+    <option value="norway">Norway</option>
+    <option value="germany">Germany</option> 
+    <option value="france">France</option>
+    <option value="rwanda">Rwanda</option>
+    <option value="Canada">Canada</option>
+    <option value="USA">USA</option>  
+    <option value="Syria">Syria</option>
+    <option value="Egypt">Egypt</option>
+    <option value="Gabon">Gabon</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Sudan">Sudan</option>
+    <option value="Eritrea">Eritrea</option>
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Burundi">Burundi</option>
+    <option value="other">Other</option>
+  </select>
+  <input type="hidden" name="access_key" value="d45e05cc-facb-4197-a915-93ed601a573e">
+  <input class="newsletter-name-email" style="margin-right: 30px;" type="text" name="Name" id="name" placeholder="   Name" required spellcheck="true">
+  <input class="newsletter-name-email" type="email"  name="mailto" id="mailto" placeholder="   Email Address" required autocomplete="on"> 
+  <input type="checkbox" checked name="Daily News" class="daily-news-box"> Daily News
+  <input class="newsletter-sub-btn" style="margin-left: 10px;"  type="submit" name="Subscribe" id="subscribe" value="Subscribe">
+</div>
+</form>
+
+
+<!---------------------------------------------------------------------Footer section----------------------------------->
+<hr class="breaklines">
+<footer class="footer2">
+    <h1 class="h2-footer">  GRIFFIN TECH SOLUTIONS</h1>
+  
+    <a href="#"> <img class="GTS-logo" src="Images/Griffin Techs-Logo.png" alt="logo"  width="200px" height="200px"></a>
+    <a href="#"> <img class="GTS-logo" src="Images/Griffin Techs-Logo.png" alt="logo"  width="200px" height="200px"></a>
+    
+  
+  <form class="row" id="footer">
+      <div class="column">
+      <h3>COMPANY</h3>
+      <ul class="footer-links">
+        <li><a href="javascript:void(0)">Team</a></li>
+        <li><a href="javascript:void(0)">Blog</a></li>
+        <li><a href="javascript:void(0)">Events</a></li>
+        <li><a href="javascript:void(0)">Projects</a></li>
+        <li> <a href="javascript:void(0)">Gift Cards</a></li>
+        <li><a href="javascript:void(0)">Partnerships</a></li>
+      </ul>
+     </div>
+  
+     <div class="column">
+      <h3>RESOURCES</h3>
+
+      <ul class="footer-links">
+        <li><a href="javascript:void(0)">FAQ</a></li>
+        <li><a href="javascript:void(0)">Courses</a></li>
+        <li><a href="javascript:void(0)">Learning Paths</a></li>
+        <li><a href="javascript:void(0)">Documentation</a></li>
+        <li><a href="Hacking-tools.html">Hacking Tools</a></li>
+        <li><a href="javascript:void(0)">Knowledge Base </a></li>
+        <li><a href="javascript:void(0)">Student Account</a></li>
+      </ul>
+     </div>
+  
+  <div class="column">
+   <h3> COURSES</h3>
+
+ <ul class="footer-links">
+    <li><a href="Cybersecurity.html" target="_blank">Cyber Security</a></li>
+    <li><a href="Ethical-hacking.html" target="_blank">Ethical Hacking</a></li>
+    <li><a href="">Data science </a></li>
+    <li><a href=""> Linux Systems</a></li>
+    <li><a href="">Web Development</a></li>
+    <li><a href="">Social Engineering</a></li>
+    <li><a href="">System Admininstration</a></li>
+    <li><a href="Griffin Tech-S.html"> Data structure & IP Address</a></li>
+    
+ </ul>
+  </div>
+  
+  <div class="column">
+   <h3>CONTACTS <i class="fa-solid fa-phone-volume"></i></h3>
+   <p>Contact Order, Service & Advice:<br>Tel: 045 - 984 - 000</p>E-mail:
+   <a class="email" href="mailto: griffinmedia@gmail.com">info@griffintechsolutions.co.no</a>
+   <p>Contact and Customer Service</p>
+
+   <div class="social-icons">
+    <h4>Follow Us on our Social Accounts:</h4>
+    <a href="https://www.instagram.com/_griffin_ug_" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.twitter.com/griffin_ug_" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+    <a href="https://youtube.com/@Griffinug?si=_gdrRW_zazJdlXYQ" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+    <a href="javascript:void(0)"><i class="fa-brands fa-discord"></i></a>
+    <a href="javascript:void(0)"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-google-play"></i></a>
+    </div><br><br>
+  </div>
+
+
+  <div class="last-column">
+    <h3>Other Links </h3>
+    <a href="javascript:void(0)">Courses</a><br>
+    <a href="javascript:void(0)">Projects</a><br>
+    <a href="javascript:void(0)">Learning Paths</a>
+</div>
+<div class="last-column">
+  <h3>Terms and Policies</h3>
+  <a href="javascript:void(0)">Disclaimer Policies</a><br>
+  <a href="javascript:void(0)">Cookie policies</a><br>
+  <a href="javascript:void(0)">Other Ts&Cs</a>
+</div>
+
+<div class="last-column">
+  <h3>Website T&Cs-2023</h3>
+      <a href="javascript:void(0)">More Links</a><br>
+      <a href="javascript:void(0)">More Links</a><br>
+      <a href="javascript:void(0)">More Links</a>
+</div>
+<div class="last-column">
+  <h3>Useful Links</h3>
+        <a href="javascript:void(0)">More Links</a><br>
+        <a href="javascript:void(0)">More Links</a><br>
+        <a href="javascript:void(0)">More Links</a>
+</div>
+<div class="last-column">
+  <h3>© Griffin Tech-S-2023</h3>
+  <a href="javascript:void(0)">More Links</a><br>
+  <a href="javascript:void(0)">More Links</a><br>
+  <a href="javascript:void(0)">More Links</a>
+</div>
+</form>
+
+
+<div id="FooterPopup" class="footer-popup"> 
+  <p>🍪This site uses cookies and related technologies for purposes that include site operation, analytics, enhanced user experience, or advertising. 
+  To learn more about how we use cookies, please refer to our  <a href="Privacy policy.html"> Cookie Policies </a> <br> and
+  <a href="Privacy policy.html" target="_blank"> Privacy Policies </a> You may choose to consent or opt-out of the use and sharing of cookies and similar technologies. </p>
+      <div class="policy-options">
+          <button class="policy-settings">Manage settings </button>
+          <button class="accept-all" onclick="closeFooter()">Accept All</button>
+  </div> 
+  </div>
+  </footer>
+
+
+<!--------------------------------JavaScript Codes---------------------------------->
+<script src="index.js"></script>
+</body>
+</html>

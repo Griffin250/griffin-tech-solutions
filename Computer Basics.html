@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Tech-S</title>
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+  <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+</head>
+<style>
+    *{
+        box-sizing: border-box;  
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    main{
+      padding: 5%;
+      margin-top: 50px;
+      font-size: 20px;
+      display: none;
+    }
+    body{
+        background:#001120;
+            color: white;
+    }
+/*...................................................Navbar.................................*/
+nav.navbar{
+    display:inline-flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: black;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+}
+.navbar b{
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navbar b:hover{
+    color: orangered;
+}
+.navbar b img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: -10px;
+filter: brightness(100%);
+}
+.navbar a.home{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    box-shadow: 0 0 5px orange;
+}
+.navbar a.home:hover{
+    border-radius: 4px;
+    transition: 0.2s;
+    opacity: 0.8;
+    height: 40px;
+}
+.navbar a.navlist{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+.navbar a.navlist:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 5px orange;
+    transition: 0.2s;
+    opacity: 0.8;
+    height: 40px;
+}
+.navbar a button{
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding:8px; 
+}
+
+    /*...................................Dropdown -menu--------------......................*/
+
+.dropdwn{
+    position: fixed;
+    display: inline-block;
+}
+.dropdown-button{
+    background: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.dropdown a i{
+    margin-left: 6px;
+    font-size: 24px;
+}
+.dropdown-list{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: grey;
+    min-width: 180px;
+    position: fixed;
+}
+
+.dropdown-list a{
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    text-align: left;
+}
+.dropdown-list a:hover {
+    color: orangered;
+    opacity: 0.8;
+    background-color: #ddd;}
+
+.dropdown:hover .dropdown-list{display: block;}
+
+
+/*.....................................................Main section......................*/
+main h1{
+    font-size: 36px;
+    font-weight: 100px;
+}
+main p span{
+    font-weight: bold;
+    font-size: 24px; 
+}
+main div.top{
+    background-color: lightblue;
+}
+ol a{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+}
+ol a:hover{
+    text-decoration: underline 1.6px solid black;
+}
+p span{
+    font-weight: bold;
+    color: black;
+}
+    
+    /*--------------------------------------------------------Footer-section.....................*/
+    footer .copyright{
+        background:grey;
+        height: 60px;
+        width: 100%;
+        bottom:0;
+        left: 0;
+        color: white;
+        border-radius: 5px;
+        position: fixed;
+        align-items:center;
+       text-align: center;
+    }
+    .copyright p{
+        font-weight: bold;
+        padding-top: 12px;
+        margin-left: 100px;
+    }
+    .copyright .rights{
+        margin: auto;
+    }
+    .copyright span {
+        
+        font-size: 20px;
+    }
+    .copyright span i{
+        padding-right: 5px; 
+    }
+    .copyright .fa-brands{
+        color: white;
+        margin-left: 10px;
+    }
+    .copyright span i.fa-whatsapp:hover{
+    color: green;
+}
+.copyright span i.fa-facebook:hover{
+    color: blue;
+}
+.copyright span i.fa-instagram:hover{
+    color: brown;
+}
+.copyright span i.fa-twitter:hover{
+    color: darkblue;
+}
+.copyright span i.fa-linkedin:hover{
+    color: blue;
+}
+.copyright span i.fa-discord:hover{
+    color: darkblue;
+}
+.copyright span i.fa-telegram:hover{
+    color:rgb(13, 144, 209);
+}
+
+   /*..........................................comment sectiojn...................*/
+   .comment-section{
+    margin-left: 12%;
+    text-align: center;
+
+}
+textarea{
+    width: 800px;
+    height: 200px;
+    resize: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px orange;
+}
+ ::placeholder{
+    color: rgb(11, 11, 11);
+ }
+</style>
+<body>
+  
+
+       <!--------------------------------------------------------Navbar------------------------->
+        <nav class="navbar">
+            <b> <img src="Images/Website-logo.jpg" width="40px" height="40px"> GRIFFIN TECH-S</b>
+
+                <a class="home" href="index.html">HOME</a>
+                
+                <!------------------------------Dropdown-menu--------------------->
+                <div class="dropdown">
+                    <a class="dropdown-button">LEARN <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-list">
+                        <a href="#intro">Introduction</a>
+                        <a href="#">Software Basics</a>
+                        <a href="#hardware">Hardware Basics</a>
+                        <a href="#">Ethical Hacking</a>            
+                        <a href="#">Networking</a>
+                        <a href="GMAIL HACKING.html">Gmail Hacking</a>
+                        <a href="#">System Administration</a>
+                        <a href="#">Linux Systems</a>
+                        <a href="#">Reviews</a>
+                    </div>
+                </div> 
+                <a class="navlist" href="#hardware">HARDWARE</a>
+                <a class="navlist" href="Hacking-tools.html">SOFTWARE</a>
+                <a class="navlist" href="#">SUPPORT</a>
+                <a class="navlist" href="About.html" target="_blank">ABOUT</a>
+            </di>
+            </nav>
+<main>
+    <div class="top">
+<h1>Computer Basics</h1>
+<p>If you're new to computers or just want to update your skills, you've come to the right place.<br> New videos coming soon!</p>
+</div>
+<h2 id="intro">  Introduction:</h2>
+<ol>
+    <li><h2> <a href="">About this Tutorial</a></h2></li>
+    <p><a href="">Learn what's covered in this topic <span> "Computer Basics" </span></a> </p>
+    <li><h2> <a href="">What is a computer? </a></h2> </li>
+    <p> <a href="">Learn what a Computer is and how it function </a></p>
+</ol>
+
+<!----------------------------------------------------------Hardware basics-------------------->
+<h1>Hardware Basics:</h1>
+<ol id="hardware">
+    <li>
+         <h3>Basic parts of a Computer</h3>
+         <p>Learn the basic parts of a computer, including the monitor, computer case, and keyboard.</p> 
+    </li>
+</ol>
+<hr>
+
+<div class="comment-section">
+
+    <h1>Leave a Comment</h1>
+    <textarea placeholder="Write anything here..."> </textarea><br>
+    <div class="name">
+        <input type="name" id="name" placeholder="Name *">
+    </div><br>
+    <div class="email">
+        <input type="email" id="email" placeholder="E-mail *">
+    </div><br>
+    <button type="submit"> Post a Comment</button>
+    
+    </div>
+
+    </main>
+    <!---------------------------------------------------Footer section------------------------------------->
+<footer id="footer">
+    <div class="copyright">
+        <p>
+        Copyright <b>©Griffin Tech-S, Inc-2023</b>
+        <span>
+   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="#"><i class="fa-brands fa-discord"></i></a>
+   <a href="#"><i class="fa-brands fa-telegram"></i></a>
+    </span>
+    <i> @griffintechsolutions.com</i>
+         </p>
+         <b class="rights">All Rights Reserved!</b>
+     </div>
+</footer>
+</body>
+</html>

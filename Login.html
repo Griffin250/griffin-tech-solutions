@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in form</title>
+    <script src="https://kit.fontawesome.com/969f6c4469.js" crossorigin="anonymous"></script>
+    <link rel="website icon" type="png" href="Images/Website-logo.jpg">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0; 
+    }
+body{
+    background-image: url(Images/Background.avif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+margin: 100px;
+align-items: center;
+justify-content: center;
+display: flex;
+min-height: 40vh;  
+border-radius: 15px;
+}
+
+.wrapper{
+background: transparent;
+width: 420px;
+height: 420px;
+color: white;
+box-shadow: 0 0 6px aqua;
+border-radius: 15px;
+padding: 10px;
+backdrop-filter: blur(10px);
+
+}
+.wrapper .inputbox{
+height: 50%;
+width: 100%;
+border-radius: 15px;
+}
+.inputbox input{
+width: 75%;
+height: 25px;
+border: solid 2px;
+border-radius: 10px;
+outline-color: white;
+border-color: whitesmoke;
+background: transparent;
+color: white;
+
+}
+.inputbox input ::placeholder{
+color: rgb(255, 255, 255);
+}
+.login{
+border-radius: 20px;
+border-color: white;
+width: 50%;
+height: 25px;
+cursor: pointer;
+align-items: center;
+font-size: 15px;
+border: none;
+
+}
+.login :hover{
+color: rgb(24, 222, 222);
+}
+.Link{
+color:aqua;
+justify-content: space-between;
+margin-right: 50px;
+text-decoration: none;
+font-size: 16px;
+}
+.Link :hover{
+color:white;
+text-decoration: underline aqua solid;
+}
+a.facebook{
+    border-radius: 5px;
+    box-shadow: -1px -1px 5px aqua;
+    cursor: pointer;
+    font-size: 17px;
+    background:none;
+    width: 60%;
+    height: 30px;
+    margin-bottom: 8px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    }
+    .facebook:hover{
+        background-color: rgb(8, 64, 161);
+        transition: 0.5s;
+    }
+    .facebook .fa-brands{
+        margin: 10px;
+    }
+    .twitter{
+    border-radius: 5px;
+   box-shadow: 1px 1px 5px aqua;
+    width: 60%;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    background: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: mymove 5s infinite;
+    }
+    .twitter .fa-brands{
+        margin: 10px;
+    }
+    .twitter:hover{
+        background-color: rgb(8, 64, 161);
+        transition: 0.5s;
+    }
+
+/*--------------------------------------------------------Footer-section.....................*/
+.copyright{
+    background: grey;
+    height: 50px;
+    width: 100%;
+    margin-top:366px;
+    margin-left: -980px;
+    position: absolute;
+}
+.copyright p{
+    font-weight: bold;
+    padding-top: 12px;
+    margin-left: 100px;
+    color: white;
+}
+.copyright .rights{
+    margin-left: 200px; ;
+}
+.copyright span {
+    margin-left: 150px;
+    margin-right: 80px;
+    font-size: 20px;
+}
+.copyright span i{
+    padding-right: 5px; 
+}
+.copyright .fa-brands{
+    color: white;
+}
+.copyright .fa-brands:hover{
+    color: aqua;
+}   
+/* ...................................................Resizing for smaller screens.......................*/
+@media only screen and (max-width:600px){
+    
+}
+</style>
+<body>
+
+<center>
+<div class="wrapper">
+    <h1> Welcome to Griffin Tech-S</h1>
+    <h2>Log In</h2><br>
+
+<form action="Griffin Tech-S.html" method="get">
+    <div class="inputbox"> 
+    <input type="text/email" name="name / Email" id="name" placeholder="   Username / E-mail" required >  <i class="fa-solid fa-user fa-beat"></i>
+</div><br>
+
+<div class="inputbox">
+    <input type="password" name="password" id="password" placeholder="   Password" required> <i class="fa-solid fa-lock fa-beat"></i>
+</div><br>
+
+
+
+<div class="remember-me">
+    <input type="checkbox" name="Remember me" id="Remember me">
+    <label for="Remember me">Remember me: </label>
+
+    <a class="Link" href="Reset_form.html"><b> Forgot Password / Username?</b> </a>
+</div><br>
+
+<div>
+        <button class="login" type="submit"> <h3><b> Login </h3></b></button><br><br>
+        <p>You don't have an Account?
+        <a class="Link" href="signup.html" target="_self"> <b> Register Here</a></b></p>
+</div> <br>
+<p>Log in with your Facebook or Twitter</p><br>
+<a class="facebook" href="https://www.facebook.com"> <i class="fa-brands fa-facebook" style="color: #0659ea;"></i> Log in with Facebook</a>
+    <a class="twitter" href="https://www.twitter.com">  <i class="fa-brands fa-square-x-twitter" style="color: #0a5ef0;"></i> Log in with Twitter </a>
+
+</div></form></center>
+
+<footer id="footer">
+    <div class="copyright">
+        <p>
+        Copyright <b>©Griffin Tech-S, Inc-2023.</b>
+        <span>
+   <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook"></i></a>
+   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="#"><i class="fa-brands fa-twitter"></i></a>
+   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="#"><i class="fa-brands fa-discord"></i></a>
+   <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+    </span>
+    <i> @griffintechsolutions.com</i>
+         <b class="rights">All Rights Reserved!</b></p>
+     </div>
+</footer>
+</body>
+</html>

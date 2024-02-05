@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Tech-S</title>
+</head>
+<body>
+    
+    <style>
+        
+    /*.........................................................................Page Loader........................................*/
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        transition: opacity 0.75s, visibility 0.75s;
+      }
+      
+      .loader--hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      
+      .loader::after {
+        content: "";
+        width: 45px;
+        height: 45px;
+        border: 15px solid orangered;
+        border-top-color:orange;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+      }
+      
+      @keyframes loading {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      
+
+h2{
+    text-align: center;
+}
+/*...............................................Softwarelist-......................*/
+.softwarelist ul{
+list-style: none;
+display: flex;
+
+}
+.softwarelist ul li{
+    float: left;
+}
+.softwarelist ul li img{
+    height: 90px;
+    width: 90px;
+  padding: 12px; 
+    animation-name: tools;
+}
+
+.softwarelist ul li img:hover {
+transform: scale(1.5); 
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+  border-radius: 12px;
+}
+@keyframes tools{
+10%{left: 200px;}
+20% {left: 500px;}
+}
+    </style>
+
+       <!--------------------------------------------------------Software list----------------------------------->
+       <div class="loader"></div>
+       <h2>Most Common Hacking Tools used in 2023</h2>
+      <marquee>
+          <div class="softwarelist">
+              
+                 <ul>
+                     <li><img src="Images/ICONS/tool-logo-aircrack-ng.svg" alt="" title="Aircrack-ng"></li>
+                     <li><img src="Images/ICONS/tool-logo-burp.svg" alt="" title="Burp"></li>
+                     <li><img src="Images/ICONS/tool-logo-crackmapexec.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-ffuf.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-hydra.svg" alt="" title="Hydra"></li>
+                     <li><img src="Images/ICONS/tool-logo-john.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-maltego.svg" alt="" title="Maltego"></li>
+                     <li><img src="Images/ICONS/tool-logo-metasploit.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-nmap.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-powershell-empire.svg" alt="" title="Powershell-Empire"></li>
+                     <li><img src="Images/ICONS/tool-logo-responder.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-sqlmap.svg" alt="" title="Sqlmap"></li>
+                     <li><img src="Images/ICONS/tool-logo-starkiller.svg" alt=""></li>
+                     <li><img src="Images/ICONS/tool-logo-wireshark.svg" alt="" title="Wireshark"></li>
+                 </ul>
+              </div> 
+            </marquee>
+            <script src="index.js"></script>
+</body>
+</html>
