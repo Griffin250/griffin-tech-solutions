@@ -103,6 +103,23 @@
          <b class="rights">All Rights Reserved!</b>
      </div>
 </footer>
-<script src="index.js"></script>
+<script>
+
+      /*............................................Login / Create Account Forms ........................................*/
+let loginForm = document.getElementById("loginForm");
+let signupForm = document.getElementById("signupForm");
+let createAccount = document.getElementById("createAccount");
+let loginButton = document.getElementById("loginButton");
+
+createAccount.onclick = function(){
+    loginForm.style.display = "none";
+    signupForm.style.display="block";
+}
+loginButton.onclick = function(){
+    signupForm.style.display="none";
+    loginForm.style.display="block";
+}
+
+</script>
 </body>
 </html>

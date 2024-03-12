@@ -58,21 +58,6 @@ function topFunction(){
      sidemenu.style.right = "-200px";
    }
 
-   
-  /*............................................Login / Create Account Forms ........................................*/
-let loginForm = document.getElementById("loginForm");
-let signupForm = document.getElementById("signupForm");
-let createAccount = document.getElementById("createAccount");
-let loginButton = document.getElementById("loginButton");
-
-createAccount.onclick = function(){
-    loginForm.style.display = "none";
-    signupForm.style.display="block";
-}
-loginButton.onclick = function(){
-    signupForm.style.display="none";
-    loginForm.style.display="block";
-}
 
 
 /*..........................................................................................................................*/
@@ -123,26 +108,6 @@ var Quiz = document.getElementById("Page19");
 /*.....................Make one of the pages to be available while others are hidden...............*/
 function openIntro(){
     content1.style.display = "block";
-
-    content1.style.transform = "translateX(0%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
     /*............change the background color to mark the active page.....................*/
     Page1.style.background = "orange";
     Page2.style.background = "none";
@@ -167,27 +132,6 @@ function openIntro(){
 function openCyberCrimes(){
     content1.style.display = "none";
     content2.style.display = "block";
-
-
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(0%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
     /*............change the background color to mark the active page.....................*/
     Page1.style.background = "none";
     Page2.style.background = "orange";
@@ -213,27 +157,6 @@ function openDarkweb(){
     content1.style.display = "none";
     content2.style.display = "none";
     content3.style.display = "block";
-
-
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(0%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
     /*............change the background color to mark the active page.....................*/
     Page1.style.background = "none";
     Page2.style.background = "none";
@@ -260,25 +183,6 @@ function openNetworkBasics(){
     content3.style.display = "none";
     content4.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(0%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
     /*............change the background color to mark the active page.....................*/
     Page1.style.background = "none";
     Page2.style.background = "none";
@@ -307,26 +211,6 @@ function openNetworkLayer(){
     content4.style.display = "none";
     content5.style.display = "block";
    
-
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(0%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -356,26 +240,6 @@ function openNetworkTransport(){
     content5.style.display = "none";
     content6.style.display = "block";
 
-
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(0%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -406,25 +270,6 @@ function openFirewallSystems(){
     content6.style.display = "none";
     content7.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(0%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -457,25 +302,6 @@ function openWebApp(){
     content7.style.display = "none";
     content8.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(0%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -508,26 +334,6 @@ function openCyberAttacks(){
     content8.style.display = "none";
     content9.style.display = "block";
 
-
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(0%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -561,25 +367,6 @@ function openMappingAndScanning(){
     content9.style.display = "none";
     content10.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(0%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -614,25 +401,6 @@ function openNetworkAttacks(){
     content10.style.display = "none";
     content11.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(0%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -669,26 +437,6 @@ function openWebAppAttacks(){
     content11.style.display = "none";
     content12.style.display = "block";
 
-
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(0%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -725,25 +473,6 @@ function openWifiAttacks(){
     content12.style.display = "none";
     content13.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(0%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -781,25 +510,6 @@ function openSocialEngineering(){
     content13.style.display = "none";
     content14.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(0%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
 
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
@@ -839,25 +549,6 @@ function openPasswordSystems(){
     content14.style.display = "none";
     content15.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(0%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
 
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
@@ -898,25 +589,6 @@ function openSecurityOperations(){
     content15.style.display = "none";
     content16.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(0%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
 
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
@@ -959,26 +631,6 @@ function openIncidentResponse(){
     content17.style.display = "block";
 
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(0%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(100%)";
-
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -1017,26 +669,6 @@ function openFaq(){
     content14.style.display = "none";
     content18.style.display = "block";
 
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(0%)";
-    content19.style.transform = "translateX(100%)";
-
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
      Page2.style.background = "none";
@@ -1059,25 +691,7 @@ function openFaq(){
 }
 
 function openQuiz(){
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    content4.style.transform = "translateX(100%)";
-    content5.style.transform = "translateX(100%)";
-    content6.style.transform = "translateX(100%)";
-    content7.style.transform = "translateX(100%)";
-    content8.style.transform = "translateX(100%)";
-    content9.style.transform = "translateX(100%)";
-    content10.style.transform = "translateX(100%)";
-    content11.style.transform = "translateX(100%)";
-    content12.style.transform = "translateX(100%)";
-    content13.style.transform = "translateX(100%)";
-    content14.style.transform = "translateX(100%)";
-    content15.style.transform = "translateX(100%)";
-    content16.style.transform = "translateX(100%)";
-    content17.style.transform = "translateX(100%)";
-    content18.style.transform = "translateX(100%)";
-    content19.style.transform = "translateX(0%)";
+
 
      /*............change the background color to mark the active page.....................*/
      Page1.style.background = "none";
